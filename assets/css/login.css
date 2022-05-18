@@ -22,6 +22,7 @@ body {
     color: var(--white-color);
     font-size: 3.6rem;
     margin: 40px;
+    z-index: 1000;
 }
 
 .content {
@@ -52,7 +53,7 @@ body {
     opacity: 0.3;
 }
 
-.content_right {
+.content_right-login {
 
 }
 
@@ -121,7 +122,11 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     margin-bottom: 20px;
-    transition: background-color ease-in 0.2s;
+    transition: background-color ease-in 0.1s;
+}
+
+.login-btn:active {
+    transform: scale(90%);
 }
 
 .login-btn:hover {
@@ -139,17 +144,26 @@ body {
     margin-right: 10px;
 }
 
-.login_register a {
-    color: var(--);
+.login_register button {
+    color: var(--dark-blue-color);
     font-size: 1.1rem;
     margin-right: 10px;
     color: var(--dark-blue-color);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: color ease-in 0.1s;
+}
+
+@keyframes login_register-color {
+    from {
+        color: var(--dark-blue-color);
+    } to {
+        color: var(--white-color);
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    body {
-
-    }
     .content_left {
         display: none;
     }
