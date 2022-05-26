@@ -385,7 +385,7 @@ ul {
 .content_left_bot_imgslide {
     display: flex;
     position: relative;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .content_left_bot_imgslide img {
@@ -472,7 +472,9 @@ ul {
     background-color: var(--brown-color);
     border-radius: 10px 10px 10px 10px;
     padding: 20px;
+    width: 100%; height: 140px;
     margin-bottom: 20px;
+    overflow-y: scroll;
 }
 
 .content_right_info_release {
@@ -653,6 +655,7 @@ ul {
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -666,6 +669,6 @@ ul {
     border-radius: 5px;
 }
 
-.swipper {
-    /* width: 100%; */
+@media only screen and (max-width: 700px) {
+    f
 }

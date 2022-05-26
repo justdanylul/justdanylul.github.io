@@ -62,6 +62,11 @@ ul {
     box-shadow: 5px 5px 0 #0f1118c7;
 }
 
+.nav-list-mobile_left li a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
 .nav-list-mobile_left--select {
     background: linear-gradient(-90deg,rgba(145, 255, 0, 0.596),rgba(21, 187, 57, 0.3)) !important;
 }
@@ -757,7 +762,14 @@ ul {
 }
 
 @media only screen and (max-width: 750px) {
+
     .footer_right {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content_feature,.content_famous,.content_special,.content_community,.content_nongame {
+        padding: 0 5vw;
     }
 }

@@ -155,6 +155,25 @@ body {
     transition: color ease-in 0.1s;
 }
 
+.reg_box {
+    display: none;
+    animation: regPop ease-out 0.2s;
+}
+
+.reg_box .login-email{
+    margin-bottom: 15px;
+}
+
+@keyframes regPop {
+    from {
+        opacity: 0;
+        box-shadow: 15px 15px 0 #0e1016, 25px 25px 0 #0e1016;
+    } to {
+        opacity: 1;
+        box-shadow: 15px 15px 0 #0e1016 ;
+    }
+}
+
 @keyframes login_register-color {
     from {
         color: var(--dark-blue-color);

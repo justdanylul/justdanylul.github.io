@@ -39,8 +39,8 @@ list_btn.addEventListener('click', () => {
     } 
     else {
         list_content.classList.remove('growUp');
-        list_btn.classList.add('is-opened');
         list_content.style.display = 'flex';
+        list_btn.classList.add('is-opened');
         modal.style.display = 'block';
     }
 })
