@@ -12,8 +12,6 @@ const content_icon = document.querySelectorAll('.content_icon');
 const content_circle = document.querySelector('.content_commnunity-circle');
 const content_text_pop = document.querySelector('.content_community-text');
 
-// fadeInIcon ease-out 0.2s forwards
-
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
     console.log(scroll);

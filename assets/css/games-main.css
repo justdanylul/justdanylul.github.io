@@ -62,11 +62,6 @@ ul {
     box-shadow: 5px 5px 0 #0f1118c7;
 }
 
-.nav-list-mobile_left li a {
-    text-decoration: none;
-    color: var(--white-color);
-}
-
 .nav-list-mobile_left--select {
     background: linear-gradient(-90deg,rgba(145, 255, 0, 0.596),rgba(21, 187, 57, 0.3)) !important;
 }
@@ -355,12 +350,14 @@ ul {
 .content_feature {
     padding: 0 13vw;
     margin-top: 40px;
+    width: 130%;
+    margin-left: -15%;
 }
 
 .content_feature p {
     color: var(--white-color);
     font-size: 1.6rem;
-    margin-left: 20px;
+    margin-left: 15.7%;
 }
 
 .content_feature-images-slide {
@@ -761,15 +758,38 @@ ul {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
+    .content_feature, .content_famous, .content_special, .content_community {
+        padding: 5vw 0;     
+    }
+    .content_feature, .content_community{
+        width: 130%;
+    }
+}
 
+@media only screen and (max-width: 750px) {
     .footer_right {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .content_feature,.content_famous,.content_special,.content_community,.content_nongame {
-        padding: 0 5vw;
+@media only screen and (max-width: 500px) {
+    .footer_right {
+        display: none;
     }
+    .content_nongame_item img{
+        width: 170%;
+    } 
+}
+
+.swiper {
+    width: 70%;
+}
+
+.content_feature_info-img img:hover{
+    opacity: 1;
+}
+
+.content_nongame .swiper-slide {
+    height: 200px !important;
 }

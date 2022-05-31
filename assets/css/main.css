@@ -758,6 +758,15 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
+
+    .content_commnunity-circle {
+        left: 25vw;
+    }
+
+    .content_community-text {
+        margin: -24vw;
+    }
+
     .content_game img {
         opacity: 0.5;
     }
